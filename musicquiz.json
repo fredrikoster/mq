@@ -1,0 +1,50 @@
+{
+  "title" : "MQ 2017",
+  "created" : "2017-10-28",
+  "alternatives" : false,
+  "active" : true,
+  "content" : [
+    {
+	  "description" : "This is a question description 1",
+	  "mediaType" : "youtube",
+	  "mediaSource" : "https://www.youtube.com/embed/2JLK02Fgyn4",
+      "questions" : [ 
+		{ 
+			"question" : "Vad heter Fredrik?",
+			"alternatives" : ["Pelle", "Lars","Jens", "Olle"],
+			"image" : "img/artist1.jpg",
+			"answer" : "Öster",
+			"points" : 1
+		},
+		{ 
+			"question" : "Vad heter Pär?",
+			"alternatives" : ["Pelle", "Lars","Jens", "Olle"],
+			"image" : "img/artist2.jpg",
+			"answer" : "Test",
+			"points" : 1
+		}
+	  ]
+	},
+	{
+	  "description" : "This is a question description 2",
+	  "mediaType" : "spotify",
+	  "mediaSource" : "https://open.spotify.com/embed/user/sajberoster/playlist/21jYGJekgWN0UcFRFKJuir",
+      "questions" : [ 
+		{ 
+			"question" : "Vilken färg är mörkast",
+			"alternatives" : ["Pelle", "Lars","Jens", "Olle"],
+			"image" : "",
+			"answer" : "Svart",
+			"points" : 1
+		},
+		{ 
+			"question" : "Vad heter staden?",
+			"alternatives" : ["Pelle", "Lars","Jens", "Olle"],
+			"image" : "",
+			"answer" : "NY",
+			"points" : 1
+		}
+	  ]
+	}
+  ]
+}
