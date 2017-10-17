@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Grayscale - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="css/grayscale.min.css" rel="stylesheet"> -->
+	<link href="css/grayscale.css" rel="stylesheet">
+	
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger text-shadow" href="#page-top"><i class="fa fa-play-circle"></i> MUSIC QUIZ</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#rules">Rules</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#question-start">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#answers">Answers</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+		<div class="">Image: http://luxurystays.in/blog/wp-content/uploads/2017/02/workaway-goa.jpg</div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 id="mqTitle" class="brand-heading text-shadow">Music Quiz</h1>
+              <p class="intro-text text-shadow">A free, responsive, one page Bootstrap theme.
+                <br>Created by Start Bootstrap.</p>
+              <a href="#rules" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated theme-color"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="rules" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Hur spelar man?</h2> 
+			<p class="text-left">
+				<i class="fa fa-music theme-color" aria-hidden="true"></i> Stoppa/pausa låten innan ni går vidare till nästa fråga.<br/>
+				<i class="fa fa-music theme-color" aria-hidden="true"></i> Om ni förstorar en video till helskärm, tryck på Esc för att återgå till normalläge.<br/>
+				<i class="fa fa-music theme-color" aria-hidden="true"></i> För att dölja menyn i webbläsaren, tryck F11. Använd samma knapp för att återgå till normalläge.
+			</p> 
+			
+			<h2>Regler</h2>
+			<p class="text-left">
+				<i class="fa fa-check theme-color" aria-hidden="true"></i> Dela in er i lag och förse varje lag med papper och penna.<br/>
+				<i class="fa fa-check theme-color" aria-hidden="true"></i> Lägg ifrån er mobilerna för en rättvis och jämn kamp.<br/>
+				<i class="fa fa-check theme-color" aria-hidden="true"></i> Varje rätt svar ger 1 poäng om inte annat anges i frågan.<br/>
+			</p>
+			<a href="#question-start" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated theme-color"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+	
+    <!-- Questions Section -->
+    <section id="question" class="content-section text-center">
+      <div id="question-start" class="container question-section">
+        <div class="col-lg-10 mx-auto">
+			<h2 class="question-nr">
+				<span class="theme-color text-shadow">#</span>
+				<span id="question_nr" class="text-shadow"></span>
+			</h2>
+      <p id="question_description">Question Description</p>
+      
+      <div id="question_media" class=""></div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body modal-backdrop">
+              <img id="modal-image" src="" />
+              <br/>
+              <button type="button" class="btn btn-default mt-2" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+			<div id="question_box" class="pt-3 text-left"></div>
+			<div class="mt-2">
+				<button id="question_prev" class="btn btn-default btn-lg"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+				<button id="question_next" class="btn btn-default btn-lg"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+			</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact Start Bootstrap</h2>
+            <p>Feel free to leave us a comment on the
+              <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a>
+              on Start Bootstrap to give some feedback about this theme!</p>
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
+                  <i class="fa fa-twitter fa-fw"></i>
+                  <span class="network-name">Twitter</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg">
+                  <i class="fa fa-google-plus fa-fw"></i>
+                  <span class="network-name">Google+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Kodaline.se 2017</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+	
+	<script>
+
+	var myMQ;
+	var questionNr = 0;
+	var totalNrOfQuestions = 0;
+	var displayAlternatives = false;
+	var requestURL = 'musicquiz.json';
+	var request = new XMLHttpRequest();
+	// Cacheing HTML elements
+	var questionContainer = document.querySelector('#question');
+	var elQuestionNr = document.querySelector('#question_nr');
+	var elDescription = document.querySelector('#question_description');
+	var elQuestionBox = document.querySelector('#question_box');
+	var elMedia = document.querySelector('#question_media');
+  var elModalImg = document.querySelector('#modal-image');
+	var buttonPrev = document.querySelector('#question_prev');
+	var buttonNext = document.querySelector('#question_next');
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function() {
+      myMQ = request.response;
+	  totalNrOfQuestions = myMQ['content'].length-1; //0 is counting
+	  displayAlternatives = myMQ['alternatives'];
+      populateHeader(myMQ);
+	  getQuestion();
+    }
+	
+	function populateHeader(jsonObj) {
+	  document.getElementById("mqTitle").innerHTML = myMQ['title'];
+	  document.title = jsonObj.title;
+	}
+
+	
+	function getQuestion() {	
+		var mediaType;
+		var mediaSource;
+		elQuestionNr.innerHTML = questionNr + 1;
+		elDescription.innerHTML = myMQ["content"][questionNr].description;
+		
+		var questions = myMQ['content'][questionNr].questions;
+    var questionList = document.createElement('ol');
+		questionList.type = "A";
+		for(var j = 0; j < questions.length; j++) {
+      var image;
+      var questionItem = document.createElement('li');
+      questionItem.textContent = questions[j].question;
+      image = questions[j].image;
+      if(image != "") {
+        var iElement = document.createElement('i');
+        iElement.setAttribute("data-toggle", "modal");
+        iElement.setAttribute("data-target", "#myModal");
+        iElement.setAttribute("data-img-src", image);
+        iElement.setAttribute("class", "fa fa-camera");
+        iElement.setAttribute("aria-hidden", "true");
+        iElement.setAttribute("onclick", "setModalImgSource(this);");
+        questionItem.innerHTML += " ";
+        questionItem.appendChild(iElement);
+      }
+
+		  if(displayAlternatives) {
+        var answerList = document.createElement('ol');
+        answerList.type = "A";
+        for(var k = 0; k < questions[j].alternatives.length; k++) {
+          var answerItem = document.createElement('li');
+          answerItem.textContent = questions[j].alternatives[k];
+          answerList.appendChild(answerItem);
+        }
+			  questionItem.appendChild(answerList);
+      }
+		  
+      questionList.appendChild(questionItem);
+    }
+
+		elQuestionBox.innerHTML = ""; //clear content
+		elQuestionBox.appendChild(questionList);
+		
+		elMedia.innerHTML = "";
+		
+		mediaType = myMQ['content'][questionNr].mediaType;
+		mediaSource = myMQ['content'][questionNr].mediaSource;
+		if(mediaType == "spotify") {
+			getSpotify(mediaSource);
+		} else if(mediaType == "youtube") {
+			getYouTube(mediaSource);
+		}
+		
+		if(totalNrOfQuestions <= questionNr ) {
+			buttonNext.disabled = true;
+		} else {
+			buttonNext.disabled = false;
+		}
+		
+		if(questionNr == 0) {
+			buttonPrev.disabled = true;
+		} else {
+			buttonPrev.disabled = false;
+		}
+	}
+
+  function setModalImgSource(linkElement){
+    elModalImg.setAttribute("src", linkElement.getAttribute("data-img-src"));
+  }
+	
+	function getYouTube(mediaSource) {
+		elMedia.innerHTML = '<div class="embed-responsive embed-responsive-16by9">' +
+		'<iframe class="embed-responsive-item" src="' + mediaSource + '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen"></iframe></div>';
+	}
+	
+	function getSpotify(mediaSource) {
+		elMedia.innerHTML = '<div style="width:23%;height:50px;background-color:#282829;position:relative;top:50px;margin-left:43%;"></div>' + 
+		'<iframe class="embed-responsive-item" src="' + mediaSource + '" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>';
+	}
+
+	buttonNext.addEventListener('click', function() {
+	  // Fade out
+	  questionContainer.style.opacity = 0;
+	  
+	  // Fade in 
+	  setTimeout(function(){ 
+		  questionNr++;
+		  getQuestion();
+		  questionContainer.style.opacity = 1;
+	  },500);
+	  
+	});
+	
+	buttonPrev.addEventListener('click', function() {
+	  // Fade out
+	  questionContainer.style.opacity = 0;
+	  // Fade in 
+	  setTimeout(function(){ 
+		  questionNr--;
+		  getQuestion();
+		  questionContainer.style.opacity = 1;
+	  },500);
+	  
+	});
+
+    </script>
+	
+
+  </body>
+
+</html>
